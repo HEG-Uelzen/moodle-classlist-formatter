@@ -2,6 +2,7 @@ import os
 import json
 import string
 from time import sleep
+from pathlib import Path
 
 def main():
     # file_url = input("Enter the direction of your JSON-file: ")
@@ -13,7 +14,7 @@ def main():
     final = []
 
     # read file 
-    names = json.loads(open("/home/codespace/workspace/moodle-classlist-formatter/lib/names.json").read())
+    names = json.loads(open("/home/codespace/workspace/moodle-classlist-formatter/names.json").read())
     # print(names)
 
     # password input
