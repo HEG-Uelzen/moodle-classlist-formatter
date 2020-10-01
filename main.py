@@ -2,7 +2,7 @@ import os
 import json
 import string
 from time import sleep
-from pathlib import Path
+# from pathlib import Path
 
 def main():
     # file_url = input("Enter the direction of your JSON-file: ")
@@ -19,30 +19,33 @@ def main():
 
     # password input
     password = input("Please enter the default password for your students: ")
+    # password = str(password)
+    print("You set " + password + " as default password.")
 
     # email domain input
-    e_domain = ("Please enter the E-Mail Domain of your students: ")
-    sleep(10)
+    e_domain = input("Please enter the E-Mail Domain of your students: ")
+    print("You set " + e_domain + " as your studendts e-mail domain.")
     
     for name in names:
         name_lowercase = name.lower()
         # print(name_lowercase)
 
         username = name_lowercase.replace(" ", ".")
-        str(username)
+        username = str(username)
         print(username)
 
         firstname = ""
-        str(firstname)
+        firstname = str(firstname)
 
         lastname = ""
-        str(lastname)
+        lastname = str(lastname)
 
-        email = username + "@" + str(e_domain)
-        str(email)
+        email = username + "@" + e_domain
+        email = str(email)
         print(email)
 
         final_line = username + ";" + password + ";" + firstname + ";" + lastname + ";" + email
+        print(final_line)
 
         final.append(final_line)
 
