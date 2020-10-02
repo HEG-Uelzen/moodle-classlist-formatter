@@ -1,5 +1,5 @@
 {
     "python.linting.pylintEnabled": true,
     "python.linting.enabled": true,
-    "python.pythonPath": "c:\\Users\\Dietrich\\Documents\\GitHub\\moodle-classlist-formatter\\env\\Scripts\\python.exe"
+    "python.pythonPath": "env/bin/python3"
 }
