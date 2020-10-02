@@ -1,13 +1,20 @@
 import os
 import json
 import string
+import platform
+
 from time import sleep
 from pathlib import Path
 
 def main():
     # file_url = input("Enter the direction of your JSON-file: ")
     current = str(Path.cwd().absolute())
-    file_url = current + "\\names.json"
+    
+    if platform.system() == "Windows":
+        file_url = current + "\\names.json"
+
+    else:
+        file_url = current + "/names.json"
 
     print("--------")
     print("Programm is starting")
@@ -65,7 +72,8 @@ def main():
 
     output_file = open("output.txt", "w+")
 
-    output_file.write(str(final))
+    for item in final:
+        output_file.write(item + '\n')
 
 
         
