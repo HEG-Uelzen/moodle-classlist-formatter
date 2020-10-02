@@ -8,8 +8,11 @@ from pathlib import Path
 
 def main():
     # file_url = input("Enter the direction of your JSON-file: ")
+    
+    # find names.json file
     current = str(Path.cwd().absolute())
     
+    # os detection for correct names file direction syntax
     if platform.system() == "Windows":
         file_url = current + "\\names.json"
 
