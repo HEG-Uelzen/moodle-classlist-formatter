@@ -5,6 +5,8 @@ import platform
 
 from time import sleep
 from pathlib import Path
+from progress.bar import Bar
+
 
 def main():
     # file_url = input("Enter the direction of your JSON-file: ")
@@ -43,6 +45,8 @@ def main():
     print()
     sleep(4)
 
+    bar = Bar("Processing", max=20)
+
     for name in names:
         name_lowercase = name.lower()
         # print(name_lowercase)
@@ -64,9 +68,13 @@ def main():
         # print(email)
 
         final_line = username + ";" + password + ";" + firstname + ";" + lastname + ";" + email
-        print(final_line)
+        # print(final_line)
 
         final.append(final_line)
+
+        bar.next()
+
+    bar.finish()
 
     print()
     print("Creating output file...")
