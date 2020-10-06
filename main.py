@@ -22,9 +22,9 @@ def main():
     else:
         file_url = current + "/names.json"
 
-    print("-----------------------")
-    print("| Programm is started |")
-    print("-----------------------")
+    print("--------------------")
+    print("| Programm started |")
+    print("--------------------")
 
     final = []
 
@@ -42,7 +42,7 @@ def main():
     print("You set " + e_domain + " as your studendts e-mail domain.")
     
     print()
-    print("------")
+    print("-----------------------------------------------------------------")
     print()
     sleep(1)
 
