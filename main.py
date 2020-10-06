@@ -6,6 +6,7 @@ import platform
 from time import sleep
 from pathlib import Path
 from progress.bar import Bar
+from progress.spinner import Spinner
 
 
 def main():
@@ -43,9 +44,9 @@ def main():
     print()
     print("------")
     print()
-    sleep(4)
+    sleep(1)
 
-    bar = Bar("Processing", max=20)
+    bar = Bar("Processing", max=len(names))
 
     for name in names:
         name_lowercase = name.lower()
@@ -73,6 +74,7 @@ def main():
         final.append(final_line)
 
         bar.next()
+        sleep(0.1)
 
     bar.finish()
 
@@ -83,9 +85,14 @@ def main():
 
     output_file = open("output.txt", "w+")
 
+    spinner = Spinner("Writing...")
+
     for item in final:
         output_file.write(item + '\n')
+        spinner.next()
+        sleep(0.1)
 
+    spinner.finish()
 
         
 
