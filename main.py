@@ -22,9 +22,9 @@ def main():
     else:
         file_url = current + "/names.json"
 
-    print("--------")
-    print("Programm is starting")
-    print("--------")
+    print("-----------------------")
+    print("| Programm is started |")
+    print("-----------------------")
 
     final = []
 
