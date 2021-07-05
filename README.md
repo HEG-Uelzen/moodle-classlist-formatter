@@ -37,3 +37,8 @@ lucas.podolski;InitialPassword;Lucas;Podolski;lucas.podolski@email-domain-of-use
 michael.schuhmacher;InitialPassword;Michael;Schuhmacher;michael.schuhmacher@email-domain-of-users.com
 alexander.maschallah;InitialPassword;Alexander;Maschallah;alexander.maschallah@email-domain-of-users.com
 ```
+
+## installation
+1. Clone the repo with `git clone https://github.com/HAUDRAUFHAUN/moodle-classlist-formatter.git` and navigate into the directory with `cd moodle-classlist-formatter`
+2. Install the python dependencies with `pip3 install -r requirements.txt`
+3. execute the tool with `python3 main.py`
