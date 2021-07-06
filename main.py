@@ -45,17 +45,22 @@ def main():
     print("-----------------------------------------------------------------")
     print()
     sleep(1)
-
+    
+    # create progress bar for the name formatting process
     bar = Bar("Processing", max=len(names))
-
+    
+    # iterate over given names => name formatting process
     for name in names:
+        
+        # generate username
         name_lowercase = name.lower()
         # print(name_lowercase)
 
         username = name_lowercase.replace(" ", ".")
         username = str(username)
         # print(username)
-
+        
+        # generate first- and lastname
         vornachname = name.split(' ')
 
         firstname = vornachname[0]
@@ -63,14 +68,17 @@ def main():
 
         lastname = vornachname[1]
         lastname = str(lastname)
-
+        
+        # generate user email-adress
         email = username + "@" + e_domain
         email = str(email)
         # print(email)
-
+        
+        # generate line in the textfile for the handled user
         final_line = username + ";" + password + ";" + firstname + ";" + lastname + ";" + email
         # print(final_line)
-
+        
+        # add final user output to all of the other finally formatted users
         final.append(final_line)
 
         bar.next()
@@ -82,11 +90,14 @@ def main():
     print("Creating output file...")
     print()
     sleep(1)
-
+    
+    # open the output file
     output_file = open("output.txt", "w+")
-
+    
+    # create progress bar for the output-file writing process
     spinner = Spinner("Writing...")
 
+    # write each finally formatted user to the output file
     for item in final:
         output_file.write(item + '\n')
         spinner.next()
