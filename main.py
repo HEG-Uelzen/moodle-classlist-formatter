@@ -97,6 +97,9 @@ def main():
     # create progress bar for the output-file writing process
     spinner = Spinner("Writing...")
 
+    # write first static line that tells moodle the format
+    output_file.write('username;password;firstname;lastname;email' + '\n')
+
     # write each finally formatted user to the output file
     for item in final:
         output_file.write(item + '\n')
