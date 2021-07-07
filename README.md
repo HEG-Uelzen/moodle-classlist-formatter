@@ -23,6 +23,7 @@ Little python script that generates a list of new users out of a name list for t
 
 #### Output (txt):
 ```txt
+username;password;firstname;lastname;email
 liam.meyer;InitialPassword;Liam;Meyer;liam.meyer@email-domain-of-users.com
 noah.gustav;InitialPassword;Noah;Gustav;noah.gustav@email-domain-of-users.com
 william.dumbledore;InitialPassword;William;Dumbledore;william.dumbledore@email-domain-of-users.com
