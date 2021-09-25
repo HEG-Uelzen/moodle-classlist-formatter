@@ -40,6 +40,6 @@ alexander.maschallah;InitialPassword;Alexander;Maschallah;alexander.maschallah@e
 ```
 
 ## installation
-1. Clone the repo with `git clone https://github.com/HAUDRAUFHAUN/moodle-classlist-formatter.git` and navigate into the directory with `cd moodle-classlist-formatter`
+1. Clone the repo with `git clone https://github.com/HEG-Uelzen/moodle-classlist-formatter.git` and navigate into the directory with `cd moodle-classlist-formatter`
 2. Install the python dependencies with `pip3 install -r requirements.txt`
 3. execute the tool with `python3 main.py`
