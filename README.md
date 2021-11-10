@@ -1,3 +1,5 @@
+> ⚠️ This repo has been moved into the [admin-tools](https://github.com/HEG-Uelzen/admin-tools). It can be found there [here](https://github.com/HEG-Uelzen/admin-tools/tree/main/moodle-tools/classlist-formatter).
+
 # moodle-classlist-formatter
 
 Little python script that generates a list of new users out of a name list for the moodel edu system.
